@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page 1 -->
+  <div class="page active" id="page1">
+    <h1>Dear joysaheb amar Imtir Abbu ❤️</h1>
+    <p>I made something for you🪆...</p>
+    <button onclick="nextPage(2)">Open It ✨</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div class="page hidden" id="page2">
+    <h2>
+      Will you open my surprise<br>
+      and, just like that, promise me you’ll stay with me forever? ❤️
+    </h2>
+    <button onclick="nextPage(3)">Yes ❤️</button>
+    <button id="noBtn">No 💔</button>
+  </div>
+
+  <!-- Page 3 -->
+  <div class="page hidden" id="page3">
+    <h2 id="typing"></h2>
+    <button onclick="nextPage(4)">Next ➡️</button>
+  </div>
+
+  <!-- Page 4 -->
+  <div class="page hidden" id="page4">
+    <h2>My Surprise Message 🎁</h2>
+    <p>You are the most special person in my life ❤️</p>
+    <button onclick="nextPage(5)">Next ➡️</button>
+  </div>
+
+  <!-- Page 5 -->
+  <div class="page hidden" id="page5">
+    <p>
+      Amar Bachchaa(◠‿◠)<br><br>
+      My everyythingggg♡‿♡<br><br>
+      Today is your birthday, and I know many people will wish you in very beautiful ways 🎈.<br>
+      But ^.^ I have been waiting for this day for so long, counting the days just for you ^.^<br><br>
+      I don’t do these things for anyone else, you are the first and only one ♡.<br><br>
+      I want you to be very successful in life, to stay very very happy (˘︶˘).<br><br>
+      Happy Birthday Joy ❤️
+    </p>
+    <button onclick="nextPage(6)">Next ➡️</button>
+  </div>
+
+  <!-- Page 6 -->
+  <div class="page hidden" id="page6">
+    <h2>Days Together:<br>4 years ❤️</h2>
+    <button onclick="nextPage(7)">Next ➡️</button>
+  </div>
+
+  <!-- Final Page -->
+  <div class="page hidden" id="page7">
+    <h1>
+      I Love You ✿✾<br>
+      My most peaceful harbor, my most beautiful sanctuary…<br>
+      I love you endlessly, forever and always, only you ✿✾
+    </h1>
+    <h3>
+      Forever yours ❥<br>
+      Imtir Ammu (｡•́‿•̀｡)
+    </h3>
+    <canvas id="confetti"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
